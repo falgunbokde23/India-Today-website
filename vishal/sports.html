@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(auto,auto);
+            border: 1px solid red;
+            
+
+
+
+
+
+        }
+        img{
+            width:80%;
+            height: 400px;
+
+
+
+
+
+
+        }
+        
+        p{
+            color: blue;
+            font-size: larger;
+            font-family: 'Courier New', Courier, monospace;
+            justify-content: space-evenly;
+
+
+
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
+<script>
+   // const api_key="462f80a4d0bf42e9bce2c4b2aab8cd5"
+   // let url=`https://newsapi.org/v2/top-headlines?country=us&apiKey=${api_key}`
+   let url=`https://newsapi.org/v2/top-headlines?country=us&apiKey=462f80a4d0bf42e9bce2c4b2aab8cd5b`
+async function k(){
+
+res=await fetch(url) 
+data=await res.json();
+console.log(data)
+
+append(data.articles)
+
+
+
+}
+k()
+
+function append(data){
+x=data.forEach(element => {
+    console.log(element)
+
+    let container=document.getElementById("container") 
+
+    div=document.createElement('div')
+    image=document.createElement('img')
+    image.src=element.urlToImage
+    p1=document.createElement("p")
+    p1.innerText=element.title
+    p2=document.createElement("p")
+    p2.innerText=element.author
+    p3=document.createElement("p")
+    p3.innerText=element.description
+    div.append(image,p1,p2,p3)
+    container.append(div)
+    
+
+
+
+
+
+
+
+
+});
+
+
+
+
+
+
+}
+
+
+</script>
+
+
