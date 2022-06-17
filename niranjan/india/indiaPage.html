@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../comm/comm.css">
+    <link rel="stylesheet" href="/India-Today-website/falgun/footer/footer.css">
+    <link rel="stylesheet" href="/India-Today-website/vinay/navbar/navbar.css">
+    <script src="https://kit.fontawesome.com/e9bb69dc7f.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
+    <div id="navbar">
+
+    </div>
     <div id="maindiv">
         <div id="box">
             <div id="world">
@@ -26,6 +33,19 @@
             </div>
         </div>
     </div>
+    <div id="footer">
+
+    </div>
 </body>
 </html>
 <script src="IndiaPage.js"></script>
+<script type="module">
+
+    import navbar from "/India-Today-website/vinay/navbar/navbar.js"
+    let nav = document.getElementById("navbar").innerHTML=navbar()
+
+
+    import footer from "/India-Today-website/falgun/footer/footer.js"
+    let foot=document.getElementById("footer").innerHTML=footer();
+
+</script>

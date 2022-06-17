@@ -33,7 +33,7 @@ let login = (form, user) => {
         let loggedIn = true;
 
         localStorage.setItem('loggedIn', loggedIn);
-        // window.location.href = 'index.html';
+        window.location.href = '/India-Today-website/neer/index.html';
 
     } else {
         alert('Incorrect Credentials!');

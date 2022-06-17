@@ -28,6 +28,7 @@ body{
 #nav-icon{
     width: 60%;
     margin: auto;
+    padding: 15px;
 }
 #nav-icon>ul{
   font-size: 36px;
@@ -44,6 +45,7 @@ body{
     font-weight: 300;
     font-size: 27px;
     padding: 0px 60px 0px 0px;
+    
 }
 #nav-icon>ul>li>a:hover{
     color: gold;
@@ -125,6 +127,15 @@ body{
     font-size: 28px;
     text-align: center;
    
+}
+#signup{
+    font-size: 25px;
+    color: white;
+    margin-top: 3px;
+    cursor: pointer;
+}
+#signup:hover{
+    color: orange;
 }
 
 

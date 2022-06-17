@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
     <link rel="stylesheet" href="business.css">
+    <link rel="stylesheet" href="/India-Today-website/falgun/footer/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e9bb69dc7f.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -39,6 +41,10 @@
        
     </div>
 
+    <div id="footer">
+
+    </div>
+
     
   
 
@@ -46,10 +52,13 @@
 </body>
 </html>
 <script type="module">
-    import navbar from "/importFile/navbar.js"
+    import navbar from "../navbar/navbar.js"
 
     let nav=document.getElementById("navbar")
     nav.innerHTML=navbar();
+
+    import footer from "/India-Today-website/falgun/footer/footer.js"
+    let foot=document.getElementById("footer").innerHTML=footer();
 </script>
 <script src="business.js">
    

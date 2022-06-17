@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technology-News</title>
-    <link rel="stylesheet" href="/tech.css">
-    <link rel="stylesheet" href="/footer.css">
+    <link rel="stylesheet" href="./tech.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="/India-Today-website/vinay/navbar/navbar.css">
     <script src="https://kit.fontawesome.com/e9bb69dc7f.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="navbar">
+
+    </div>
+
     <div id="body">
     <h4 class="h44">News/Technology</h4>
 
@@ -133,42 +138,10 @@
 </body>
 </html>
 <script type="module">
-    import footer from "./footer.js"
+    import footer from "../footer/footer.js"
     let foot=document.getElementById("footer").innerHTML=footer()
 
-    async function news(){
-        let res= await fetch("https://masai-mock-api.herokuapp.com/news/top-headlines?country=in");
-        let data= await res.json()
-        append(data)
-        console.log(data.articles)
-    }
-    news()
-
-    let append = (data) => {
-    let container = document.getElementById("container");
-    container.innerHTML = null;
-    data.forEach((el) => {
-    let div = document.createElement("div");
-    div.setAttribute("class", "divva");
-
-    let img = document.createElement("img");
-    img.src = el.source.urlToimage;
-
-    let author = document.createElement("h3");
-    author.innerText=el.author;
-
-    let content=document.createElement("h4");
-    content.innerText=el.content;
-
-    let desc=document.createElement("p");
-    desc.innerText=el.description;
-
-    let publi=document.createElement("p");
-    publi.innerText=el.publishedAt;
-
-    div.append(img,author,content,desc,publi);
-    container.append(div);
-  });
-};
+    import navbar from "/India-Today-website/vinay/navbar/navbar.js"
+    let nav =  document.getElementById("navbar").innerHTML=navbar()
 
 </script>
