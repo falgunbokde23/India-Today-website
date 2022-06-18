@@ -1,0 +1,140 @@
+body{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+#body_div{
+    display: flex;
+}
+#seatting{
+    width: 170%;
+    margin: auto;
+    margin-left: 7%;
+}
+
+#show>div{
+    width: 90%;
+    margin-left: 2%;
+    display: flex;
+    gap: 15px;
+}
+#image1{
+   width: 220px;
+   height: 120px;
+}
+#show>div>div>img{
+    width: 220px;
+    height: 120px;
+    transition: transform .3s;
+}
+#show>div>div>img:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+
+#head11{
+    margin: 0% 0% 0% 0%;
+   
+}
+#para{
+    margin: auto;
+}
+div>p{
+    font-size: 18px;
+    /* line-height: 22px; */
+    color: #111;
+    font-family: "OpenSans-Regular"
+}
+#country>div>div>img{
+    width: 420px;
+    height: 220px;
+}
+#country{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    text-align: center;
+}
+
+#sports>div>div>img{
+    width: 420px;
+    height: 220px;
+}
+#sports{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    text-align: center;
+}
+
+
+
+
+#right{
+    width: 120%;
+    margin-right: 3%;
+}
+
+#right>#letest_News{
+    width: 100%;
+    margin: auto;
+    border: 1px solid gray;
+
+}
+#letest_News>div{
+    display: flex;
+    height: 150px;
+    margin: auto;
+    border: 1px solid gray;
+    padding: 2%;
+    gap: 15px;
+
+}
+#letest_News>div:hover{
+    cursor: pointer;
+    color: rgb(36, 160, 201);
+    font-weight: bolder;
+}
+#letest_News>div>img{
+    width: 140px;
+    height: 85%;
+}
+#right>#ad{
+    padding: 3%;
+    width: 100%;
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    border-radius: 17px;
+    background-color: rgb(196, 190, 190);
+    text-align: center;
+    
+}
+#right>#ad>#ad_p{
+    text-align: center;
+    font-size: 11px;
+    color: rgba(17, 17, 17, 0.531);
+}
+#color{
+    color: rgba(211, 51, 51, 0.737);
+    margin: auto;
+}
+#addd{
+    width: 100%;
+    height: auto;
+    margin: auto;
+  text-align: center;
+    background-color: rgb(255, 252, 252);
+   
+}
+
+#ad_pp{
+    text-align: center;
+    font-size: 11px;
+    color: rgba(17, 17, 17, 0.531);
+}

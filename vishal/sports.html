@@ -5,39 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/India-Today-website/falgun/footer/footer.css">
+    <link rel="stylesheet" href="/India-Today-website/vinay/navbar/navbar.css">
+    <script src="https://kit.fontawesome.com/e9bb69dc7f.js" crossorigin="anonymous"></script>
+
     <style>
         #container{
             display:grid;
+            width: 80%;
+            margin:auto;
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: repeat(auto,auto);
-            border: 1px solid red;
-            
-
-
-
-
-
+            border: 1px solid gray;
+            gap: 10px;
+            margin-top: 10px;
+            padding: 10px;
         }
-        img{
-            width:80%;
+        #avatar{
+            width: 100%;
             height: 400px;
-
-
-
-
-
-
         }
         
         p{
-            color: blue;
-            font-size: larger;
-            font-family: 'Courier New', Courier, monospace;
+            color: black;
+            font-size: 18px;
+            /* font-family: 'Courier New', Courier, monospace; */
             justify-content: space-evenly;
-
-
-
-
+        }
+        #div5{
+            border-bottom: 1px solid grey;
+            margin-bottom: 10px;
         }
 
 
@@ -45,12 +42,18 @@
     </style>
 </head>
 <body>
+    <div id="navbar">
+
+    </div>
     <div id="container">
 
 
 
 
 
+    </div>
+    <div id="footer">
+        
     </div>
     
 </body>
@@ -79,7 +82,9 @@ x=data.forEach(element => {
     let container=document.getElementById("container") 
 
     div=document.createElement('div')
+    div.setAttribute("id", "div5")
     image=document.createElement('img')
+    image.setAttribute("id", "avatar")
     image.src=element.urlToImage
     p1=document.createElement("p")
     p1.innerText=element.title
@@ -107,6 +112,16 @@ x=data.forEach(element => {
 
 }
 
+
+</script>
+<script type="module">
+
+    import navbar from "/India-Today-website/vinay/navbar/navbar.js"
+    let nav = document.getElementById("navbar").innerHTML=navbar()
+
+
+    import footer from "/India-Today-website/falgun/footer/footer.js"
+    let foot=document.getElementById("footer").innerHTML=footer();
 
 </script>
 
